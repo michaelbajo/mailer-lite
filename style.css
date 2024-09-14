@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", system-ui;
+  font-family: "Inter";
   font-optical-sizing: auto;
   font-weight: 700;
 }
@@ -17,15 +17,26 @@ button {
 }
 
 nav {
-  font-family: "Inter", system-ui;
+  font-family: "Inter";
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
+/* Section 2 */
+.active-tab {
+  background-color: #d2e8dc;
+  color: #071e16;
+  font-weight: 700;
+}
+
+/* Basic fade animation to be applied via JavaScript */
+#dynamic-image {
+  transition: opacity 0.5s ease-in-out;
+}
 @layer utilities {
   @keyframes slide-right {
     0% {
-      transform: translateX(0%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-100%);
@@ -33,6 +44,24 @@ nav {
   }
 
   .animate-slide-right {
-    animation: slide-right 40s linear infinite;
+    animation: slide-right 60s linear infinite;
   }
+
+  /* Ensure flex items are in a row and duplicating to make continuous scrolling */
+  .logo-row {
+    display: flex;
+    width: 200%;
+  }
+}
+
+.bg-wrapper {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.isax {
+  font-size: 24px; /* Adjust icon size */
+  color: #1f2937; /* Tailwind gray-800 color */
 }

@@ -16,35 +16,11 @@
       rel="stylesheet"
     />
 
-    <style>
-      @layer utilities {
-        @keyframes slide-right {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-
-        .animate-slide-right {
-          animation: slide-right 20s linear infinite;
-        }
-
-        /* Ensure flex items are in a row and duplicating to make continuous scrolling */
-        .logo-row {
-          display: flex;
-          width: 200%;
-        }
-      }
-
-      .bg-wrapper {
-        background-image: url("./images/background.png");
-        background-size: cover;
-        background-position: center;
-        border-radius: 1rem;
-      }
-    </style>
+    <!-- Icon CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-gray-100">
     <!-- Navbar -->
@@ -72,16 +48,23 @@
       <!-- Right Section -->
       <div class="flex items-center space-x-6">
         <ul class="hidden space-x-8 md:flex">
-          <li class="relative">
-            <a href="#" class="font-semibold text-sm">Features</a>
+          <li class="relative mt-0.5">
+            <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
+              >Features <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
           <li><a href="#" class="font-semibold text-sm">Pricing</a></li>
-          <li class="relative">
-            <a href="#" class="font-semibold text-sm">Gallery</a>
+          <li class="relative mt-0.5">
+            <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
+              >Gallery <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
           <li><a href="#" class="font-semibold text-sm">Why Lite</a></li>
-          <li class="relative">
-            <a href="#" class="font-semibold text-sm">Resources</a>
+          <li class="relative mt-0.5">
+            <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
+              >Resources
+              <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
         </ul>
 
@@ -100,16 +83,16 @@
     </nav>
 
     <!-- Main Section with Hero and Logos -->
-    <section class="mx-4 bg-wrapper rounded-lg overflow-hidden">
+    <section class="mx-4 bg-wrapper rounded-[24px] overflow-hidden">
       <!-- Hero Section -->
       <div
         class="relative h-[87vh] text-white flex flex-col items-center justify-center"
       >
-        <div class="relative text-center max-w-5xl">
-          <h1 class="text-7xl font-bold mb-4">
+        <div class="relative text-center max-w-2xl">
+          <h1 class="text-5xl font-bold mb-4">
             Grow Your Business with Powerful Email Automations
           </h1>
-          <p class="mb-8 max-w-md m-auto">
+          <p class="mb-8 max-w-md m-auto text-[#EDEDED]">
             Simplify your email marketing, automate workflows, and convert leads
             with ease.
           </p>
@@ -120,8 +103,13 @@
               Start your free trial
             </button>
             <button
-              class="bg-transparent text-white px-6 py-3 rounded-md font-medium"
+              class="bg-transparent text-white px-6 py-3 rounded-md font-medium flex items-center gap-2"
             >
+              <img
+                src="./icons/play-circle.svg"
+                alt="Email marketing icon"
+                class="w-6"
+              />
               Watch Demo
             </button>
           </div>
@@ -163,5 +151,63 @@
         </div>
       </div>
     </section>
+
+    <!-- Dynamic Navigation with Images -->
+    <div
+      class="max-w-4xl mx-auto mt-24 flex flex-col justify-center items-center"
+    >
+      <!-- Navigation Section -->
+      <nav class="flex space-x-6 mb-8">
+        <button
+          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2 active-tab"
+          data-img="./images/image1.png"
+        >
+          <img
+            src="./icons/directbox-notif.svg"
+            alt="Email marketing icon"
+            class="w-4"
+          />
+          Email marketing
+        </button>
+        <button
+          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          data-img="./images/image2.png"
+        >
+          <img src="./icons/flash.svg" alt="Email marketing icon" class="w-4" />
+          Automate
+        </button>
+        <button
+          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          data-img="./images/image3.png"
+        >
+          <img
+            src="./icons/watch-status.svg"
+            alt="Email marketing icon"
+            class="w-4"
+          />
+          Tracking
+        </button>
+        <button
+          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          data-img="./images/image4.png"
+        >
+          <img src="./icons/shop.svg" alt="Email marketing icon" class="w-4" />
+          Sell products
+        </button>
+      </nav>
+
+      <!-- Image Section -->
+      <div class="relative flex justify-center items-center pb-20">
+        <img
+          id="dynamic-image"
+          src="./images/image1.png"
+          alt="Current display"
+          class="w-[80%] object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
