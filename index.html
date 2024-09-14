@@ -25,51 +25,53 @@
   <body class="bg-gray-100">
     <!-- Navbar -->
     <nav
-      class="flex items-center justify-between px-16 py-4 bg-white shadow-md"
+      class="flex flex-wrap items-center justify-between px-4 md:px-16 py-4 bg-white shadow-md"
     >
       <!-- Left Section -->
-      <div class="flex items-center space-x-8">
+      <div class="flex items-center space-x-4 md:space-x-8">
         <div class="text-2xl font-bold text-green-600">
-          <img src="./images/logo.png" alt="Mailer Lite Logo" class="w-28" />
+          <img
+            src="./images/logo.png"
+            alt="Mailer Lite Logo"
+            class="w-24 md:w-28"
+          />
         </div>
-        <ul class="hidden space-x-8 md:flex">
+        <ul class="hidden md:flex space-x-4 md:space-x-8">
           <li>
             <a href="#" class="font-semibold text-sm">For Small Business</a>
           </li>
-          <li>
-            <a href="#" class="font-semibold text-sm">For Marketers</a>
-          </li>
-          <li>
-            <a href="#" class="font-semibold text-sm">For Creators</a>
-          </li>
+          <li><a href="#" class="font-semibold text-sm">For Marketers</a></li>
+          <li><a href="#" class="font-semibold text-sm">For Creators</a></li>
         </ul>
       </div>
 
       <!-- Right Section -->
-      <div class="flex items-center space-x-6">
-        <ul class="hidden space-x-8 md:flex">
+      <div class="flex items-center space-x-4 md:space-x-6">
+        <ul class="hidden md:flex space-x-4 md:space-x-8">
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
-              >Features <img src="./icons/arrow-down.svg" alt="Arrow down icon"
-            /></a>
+              >Features
+              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
+            </a>
           </li>
           <li><a href="#" class="font-semibold text-sm">Pricing</a></li>
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
-              >Gallery <img src="./icons/arrow-down.svg" alt="Arrow down icon"
-            /></a>
+              >Gallery
+              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
+            </a>
           </li>
           <li><a href="#" class="font-semibold text-sm">Why Lite</a></li>
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
               >Resources
-              <img src="./icons/arrow-down.svg" alt="Arrow down icon"
-            /></a>
+              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
+            </a>
           </li>
         </ul>
 
         <!-- Login and Sign Up buttons -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 md:space-x-4">
           <button
             class="hidden md:block px-4 py-2 text-green-600 font-semibold text-sm"
           >
@@ -83,20 +85,22 @@
     </nav>
 
     <!-- Main Section with Hero and Logos -->
-    <section class="mx-4 bg-wrapper rounded-[24px] overflow-hidden">
+    <section class="mx-2 md:mx-4 bg-wrapper rounded-[24px] overflow-hidden">
       <!-- Hero Section -->
       <div
-        class="relative h-[87vh] text-white flex flex-col items-center justify-center"
+        class="relative h-[70vh] md:h-[87vh] text-white flex flex-col items-center justify-center px-4 md:px-0"
       >
-        <div class="relative text-center max-w-2xl">
-          <h1 class="text-5xl font-bold mb-4">
+        <div class="relative text-center max-w-lg md:max-w-2xl">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
             Grow Your Business with Powerful Email Automations
           </h1>
-          <p class="mb-8 max-w-md m-auto text-[#EDEDED]">
+          <p class="mb-8 text-[#EDEDED] text-sm md:text-base">
             Simplify your email marketing, automate workflows, and convert leads
             with ease.
           </p>
-          <div class="flex items-center justify-center space-x-4">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4"
+          >
             <button
               class="bg-white text-[#071E16] px-6 py-3 rounded-lg font-medium"
             >
@@ -117,7 +121,8 @@
 
         <!-- Footer logos -->
         <div class="overflow-hidden absolute bottom-10">
-          <div class="logo-row animate-slide-right space-x-20">
+          <div class="logo-row animate-slide-right space-x-6 md:space-x-20">
+            <!-- Logos... -->
             <img src="./images/pronature.svg" alt="logo" class="" />
             <img src="./images/trace.svg" alt="logo" class="" />
             <img src="./images/load.svg" alt="logo" class="" />
@@ -154,12 +159,14 @@
 
     <!-- Dynamic Navigation with Images -->
     <div
-      class="max-w-4xl mx-auto mt-24 flex flex-col justify-center items-center"
+      class="max-w-lg md:max-w-4xl mx-auto mt-12 md:mt-24 flex flex-col justify-center items-center"
     >
       <!-- Navigation Section -->
-      <nav class="flex space-x-6 mb-8">
+      <nav
+        class="flex flex-wrap w-3/4 md:w-full justify-center md:space-x-8 mb-8"
+      >
         <button
-          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2 active-tab"
+          class="nav-item px-2 py-2 md:px-4 font-semibold text-gray-600 rounded-md flex items-center gap-2 active-tab"
           data-img="./images/image1.png"
         >
           <img
@@ -170,14 +177,14 @@
           Email marketing
         </button>
         <button
-          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          class="nav-item px-2 py-2 md:px-4 font-semibold text-gray-600 rounded-md flex items-center gap-2"
           data-img="./images/image2.png"
         >
           <img src="./icons/flash.svg" alt="Email marketing icon" class="w-4" />
           Automate
         </button>
         <button
-          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          class="nav-item px-2 py-2 md:px-4 font-semibold text-gray-600 rounded-md flex items-center gap-2"
           data-img="./images/image3.png"
         >
           <img
@@ -188,7 +195,7 @@
           Tracking
         </button>
         <button
-          class="nav-item px-4 py-2 font-semibold text-gray-600 rounded-md flex items-center gap-2"
+          class="nav-item px-2 py-2 md:px-4 font-semibold text-gray-600 rounded-md flex items-center gap-2"
           data-img="./images/image4.png"
         >
           <img src="./icons/shop.svg" alt="Email marketing icon" class="w-4" />
@@ -202,7 +209,7 @@
           id="dynamic-image"
           src="./images/image1.png"
           alt="Current display"
-          class="w-[80%] object-cover"
+          class="w-[95%] md:w-[80%] object-cover"
         />
       </div>
     </div>

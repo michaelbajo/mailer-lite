@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Select all nav items
   const navItems = document.querySelectorAll(".nav-item");
 
-  console.log(navItems);
-
   // Add click event to each nav item
   navItems.forEach((item) => {
     item.addEventListener("click", function () {
