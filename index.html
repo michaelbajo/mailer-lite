@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mailer Lite</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @layer utilities {
+        @keyframes slide-right {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        .animate-slide-right {
+          animation: slide-right 20s linear infinite;
+        }
+
+        /* Ensure flex items are in a row and duplicating to make continuous scrolling */
+        .logo-row {
+          display: flex;
+          width: 200%;
+        }
+      }
+
+      .bg-wrapper {
+        background-image: url("./images/background.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between px-16 py-4 bg-white shadow-md"
+    >
+      <!-- Left Section -->
+      <div class="flex items-center space-x-8">
+        <div class="text-2xl font-bold text-green-600">
+          <img src="./images/logo.png" alt="Mailer Lite Logo" class="w-28" />
+        </div>
+        <ul class="hidden space-x-8 md:flex">
+          <li>
+            <a href="#" class="font-semibold text-sm">For Small Business</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold text-sm">For Marketers</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold text-sm">For Creators</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Section -->
+      <div class="flex items-center space-x-6">
+        <ul class="hidden space-x-8 md:flex">
+          <li class="relative">
+            <a href="#" class="font-semibold text-sm">Features</a>
+          </li>
+          <li><a href="#" class="font-semibold text-sm">Pricing</a></li>
+          <li class="relative">
+            <a href="#" class="font-semibold text-sm">Gallery</a>
+          </li>
+          <li><a href="#" class="font-semibold text-sm">Why Lite</a></li>
+          <li class="relative">
+            <a href="#" class="font-semibold text-sm">Resources</a>
+          </li>
+        </ul>
+
+        <!-- Login and Sign Up buttons -->
+        <div class="flex items-center space-x-4">
+          <button
+            class="hidden md:block px-4 py-2 text-green-600 font-semibold text-sm"
+          >
+            Login
+          </button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded-md">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section with Hero and Logos -->
+    <section class="mx-4 bg-wrapper rounded-lg overflow-hidden">
+      <!-- Hero Section -->
+      <div
+        class="relative h-[87vh] text-white flex flex-col items-center justify-center"
+      >
+        <div class="relative text-center max-w-5xl">
+          <h1 class="text-7xl font-bold mb-4">
+            Grow Your Business with Powerful Email Automations
+          </h1>
+          <p class="mb-8 max-w-md m-auto">
+            Simplify your email marketing, automate workflows, and convert leads
+            with ease.
+          </p>
+          <div class="flex items-center justify-center space-x-4">
+            <button
+              class="bg-white text-[#071E16] px-6 py-3 rounded-lg font-medium"
+            >
+              Start your free trial
+            </button>
+            <button
+              class="bg-transparent text-white px-6 py-3 rounded-md font-medium"
+            >
+              Watch Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer logos -->
+        <div class="overflow-hidden absolute bottom-10">
+          <div class="logo-row animate-slide-right space-x-20">
+            <img src="./images/pronature.svg" alt="logo" class="" />
+            <img src="./images/trace.svg" alt="logo" class="" />
+            <img src="./images/load.svg" alt="logo" class="" />
+            <img src="./images/greenish.svg" alt="logo" class="" />
+            <img src="./images/hues.svg" alt="logo" class="" />
+            <img src="./images/uturn.svg" alt="logo" class="" />
+            <img src="./images/umbrella.svg" alt="logo" class="" />
+            <img src="./images/luminous.svg" alt="logo" class="" />
+            <img src="./images/nextmove.svg" alt="logo" class="" />
+
+            <img src="./images/pronature.svg" alt="logo" class="" />
+            <img src="./images/trace.svg" alt="logo" class="" />
+            <img src="./images/load.svg" alt="logo" class="" />
+            <img src="./images/greenish.svg" alt="logo" class="" />
+            <img src="./images/hues.svg" alt="logo" class="" />
+            <img src="./images/uturn.svg" alt="logo" class="" />
+            <img src="./images/umbrella.svg" alt="logo" class="" />
+            <img src="./images/luminous.svg" alt="logo" class="" />
+            <img src="./images/nextmove.svg" alt="logo" class="" />
+
+            <img src="./images/pronature.svg" alt="logo" class="" />
+            <img src="./images/trace.svg" alt="logo" class="" />
+            <img src="./images/load.svg" alt="logo" class="" />
+            <img src="./images/greenish.svg" alt="logo" class="" />
+            <img src="./images/hues.svg" alt="logo" class="" />
+            <img src="./images/uturn.svg" alt="logo" class="" />
+            <img src="./images/umbrella.svg" alt="logo" class="" />
+            <img src="./images/luminous.svg" alt="logo" class="" />
+            <img src="./images/nextmove.svg" alt="logo" class="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

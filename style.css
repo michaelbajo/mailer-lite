@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+p,
+button {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+nav {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+@layer utilities {
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-slide-right {
+    animation: slide-right 40s linear infinite;
+  }
+}
