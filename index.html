@@ -45,14 +45,88 @@
         </ul>
       </div>
 
-      <!-- Right Section -->
+      <!-- Right Section (Mobile Menu Icon + Dropdown Menu) -->
       <div class="flex items-center space-x-4 md:space-x-6">
+        <div class="block md:hidden">
+          <button
+            id="menu-btn"
+            class="text-2xl text-green-600 focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <ul
+          id="mobile-menu"
+          class="hidden flex-col items-center w-full bg-white shadow-md md:hidden z-10"
+        >
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >For Small Business</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >For Marketers</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >For Creators</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mailerlite.com/pricing"
+              class="block py-2 px-4 font-semibold text-sm"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mailerlite.com/why-lite"
+              class="block py-2 px-4 font-semibold text-sm"
+              >Why Lite</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 font-semibold text-sm"
+              >Resources</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-4 font-semibold text-green-600 text-sm"
+              >Login</a
+            >
+          </li>
+          <li class="pb-4">
+            <a
+              href="#"
+              class="block py-2 px-4 font-semibold bg-green-600 rounded-lg text-white text-sm"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+
+        <!-- Desktop Links -->
         <ul class="hidden md:flex space-x-4 md:space-x-8">
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
-              >Features
-              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
-            </a>
+              >Features <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
           <li>
             <a
@@ -63,9 +137,8 @@
           </li>
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
-              >Gallery
-              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
-            </a>
+              >Gallery <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
           <li>
             <a
@@ -77,8 +150,8 @@
           <li class="relative mt-0.5">
             <a href="#" class="font-semibold text-sm flex gap-1.5 items-center"
               >Resources
-              <img src="./icons/arrow-down.svg" alt="Arrow down icon" />
-            </a>
+              <img src="./icons/arrow-down.svg" alt="Arrow down icon"
+            /></a>
           </li>
         </ul>
 
@@ -89,7 +162,9 @@
           >
             <a href="https://accounts.mailerlite.com/" target="_blank">Login</a>
           </button>
-          <button class="bg-green-500 text-white px-4 py-2 rounded-md">
+          <button
+            class="bg-green-500 text-white px-4 py-2 rounded-md hidden md:block"
+          >
             <a href="https://mailerlite.com/signup" target="_blank">Sign up</a>
           </button>
         </div>

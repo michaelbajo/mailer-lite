@@ -65,3 +65,27 @@ nav {
   font-size: 24px; /* Adjust icon size */
   color: #1f2937; /* Tailwind gray-800 color */
 }
+
+/* Mobile Menu - Initially Hidden */
+#mobile-menu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: -16px;
+  width: 100%;
+}
+
+#mobile-menu li a {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#menu-btn {
+  cursor: pointer;
+}
+
+/* Show menu when active */
+.active-menu {
+  display: flex !important;
+  flex-direction: column;
+}
